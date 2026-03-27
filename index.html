@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="dashboard">
+
+    <h1>🔥 My Dashboard</h1>
+    <button onclick="toggleTheme()">🌙 Toggle Theme</button>
+
+    <div class="grid">
+
+      <!-- TASKS -->
+      <div class="card">
+        <h2>📝 Tasks</h2>
+        <input type="text" id="taskInput" placeholder="Enter task">
+        <button onclick="addTask()">Add</button>
+        <ul id="taskList"></ul>
+      </div>
+
+      <!-- NOTES -->
+      <div class="card">
+        <h2>📒 Notes</h2>
+        <textarea id="noteInput" placeholder="Write note..."></textarea>
+        <button onclick="addNote()">Save</button>
+        <div id="noteList"></div>
+      </div>
+
+      <!-- TIMER -->
+      <div class="card">
+        <h2>⏱️ Timer</h2>
+        <h1 id="time">25:00</h1>
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
+      </div>
+
+      <!-- WEATHER -->
+      <div class="card">
+        <h2>🌤️ Weather</h2>
+        <input type="text" id="cityInput" placeholder="Enter city">
+        <button onclick="getWeather()">Search</button>
+        <p id="weatherResult"></p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
